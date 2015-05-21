@@ -12,7 +12,7 @@ class CreateBillsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('bills',function($table)
+		Schema::create('bills',function(Blueprint $table)
         {
             $table->increments('id');
             $table->integer('value_total');

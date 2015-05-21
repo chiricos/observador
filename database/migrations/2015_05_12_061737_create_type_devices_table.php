@@ -12,7 +12,7 @@ class CreateTypeDevicesTable extends Migration {
 	 */
 	public function up()
 	{
-        Schema::create('type_devices',function($table)
+        Schema::create('type_devices',function(Blueprint $table)
         {
             $table->increments('id');
             $table->string('name');

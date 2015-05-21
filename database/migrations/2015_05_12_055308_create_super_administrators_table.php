@@ -12,7 +12,7 @@ class CreateSuperAdministratorsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('super_administrators',function($table)
+		Schema::create('super_administrators',function(Blueprint $table)
         {
             $table->increments('id');
             $table->integer('user_id')->unsigned();

@@ -12,7 +12,7 @@ class CreateMaintenancesTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('maintenances',function($table)
+		Schema::create('maintenances',function(Blueprint $table)
         {
             $table->increments('id');
             $table->string('comments');

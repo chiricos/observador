@@ -12,7 +12,7 @@ class CreateBillProductTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('bill_product',function($table)
+		Schema::create('bill_product',function(Blueprint $table)
         {
             $table->increments('id');
             $table->integer('value_product');
