@@ -14,16 +14,19 @@
 Route::get('/', 'WelcomeController@index');
 
 Route::get('home', 'HomeController@index');
-
-
-
-
-Route::get('drawde',array('as'=>'drawde','middleware'=>'permission','permission'=>'prueba','uses',function(){
-    return 'drawde';
-}));
-
+Route::get('juan',function(){
+	dd('sss');
+});
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
+]);
+$router->get('fo', [
+	'uses' => 'HomeController@foo',
+	'as' => NULL,
+	'middleware' => ['permission'],
+	'where' => [],
+	'domain' => NULL,
+	'permission' => 'prueba'
 ]);

@@ -2930,7 +2930,6 @@
         "fzaninotto/faker": 20
     },
     "prefer-stable": false,
-    "prefer-lowest": false,
     "platform": [],
     "platform-dev": []
 }

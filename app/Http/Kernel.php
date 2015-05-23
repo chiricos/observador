@@ -16,7 +16,6 @@ class Kernel extends HttpKernel {
 		'Illuminate\Session\Middleware\StartSession',
 		'Illuminate\View\Middleware\ShareErrorsFromSession',
 		'baibai\Http\Middleware\VerifyCsrfToken',
-		'baibai\Http\Middleware\permissions',
 	];
 
 	/**
@@ -28,7 +27,7 @@ class Kernel extends HttpKernel {
 		'auth' => 'baibai\Http\Middleware\Authenticate',
 		'auth.basic' => 'Illuminate\Auth\Middleware\AuthenticateWithBasicAuth',
 		'guest' => 'baibai\Http\Middleware\RedirectIfAuthenticated',
-		'permissions' => 'baibai\Http\Middleware\permissions',
+		'permission' => 'baibai\Http\Middleware\Permission',
 	];
 
 }

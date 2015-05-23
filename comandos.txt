@@ -1,0 +1,133 @@
+commit 0cd471a0f0076db24c5109392f9fd75889ca9d20
+Author: chiricos <edwarddiaz92@gmail.com>
+Date:   Sat May 23 11:30:49 2015 -0500
+
+    ACL ok
+
+commit a96d7bd5a143965501e64c3906754862bc15da60
+Author: chiricos <edwarddiaz92@gmail.com>
+Date:   Sat May 23 10:25:45 2015 -0500
+
+    creando carpeta repositories
+
+commit 187407efb756e3b6bbb695d3a51146714fa5c14f
+Author: juan2ramos <juan2ramos@gmail.com>
+Date:   Sat May 23 09:53:26 2015 -0500
+
+    add fork baibaiOrganization
+
+commit 84b392299451896360f6c767831cac3623ca4291
+Merge: accaa78 db1e0ba
+Author: juan2ramos <juan2ramos@gmail.com>
+Date:   Sat May 23 08:36:54 2015 -0500
+
+    Merge branch 'master' of github.com:chiricos/baibai
+
+commit db1e0baefe1d3ef1dba1065c2218e8090eba1172
+Author: chiricos <edwarddiaz92@gmail.com>
+Date:   Thu May 21 01:49:54 2015 -0500
+
+    agregando unique a los campos de migration
+
+commit caf1b38d5635d598cdb4770feb0b58e137f7cb48
+Author: chiricos <edwarddiaz92@gmail.com>
+Date:   Wed May 20 20:20:14 2015 -0500
+
+    migrations
+
+commit 08331777c9a7026b4975e9d8122b75c400327d08
+Author: chiricos <edwarddiaz92@gmail.com>
+Date:   Tue May 19 00:26:46 2015 -0500
+
+    database
+
+commit 9eb75c4f05f59c33b7c128922b1bc310fb8b770c
+Author: chiricos <edwarddiaz92@gmail.com>
+Date:   Tue May 12 01:40:58 2015 -0500
+
+    creacion de todas las tablas migration
+
+commit 251ef7417bc2a05afb292be20b3324688e8e89f9
+Author: chiricos <edwarddiaz92@gmail.com>
+Date:   Mon May 11 12:00:11 2015 -0500
+
+    database
+
+commit aa571ed956ecff1bc54f5e07289a1e7bf18d2671
+Author: chiricos <edwarddiaz92@gmail.com>
+Date:   Sat May 9 16:52:28 2015 -0500
+
+    gulp
+
+commit accaa78c788ddcf1c7787a41e4a33068f1db3d3c
+Author: juan2ramos <juan2ramos@gmail.com>
+Date:   Sat May 9 13:31:53 2015 -0500
+
+    ignore modules node
+
+commit 4adaf04ec36bd1754242f6ab4b84fcf2358bf524
+Author: juan2ramos <juan2ramos@gmail.com>
+Date:   Sat May 9 13:28:15 2015 -0500
+
+    ignore modules node
+
+commit ca2b1f9e5f8d2ec1314153e8b8440ca794ecb8f4
+Author: juan2ramos <juan2ramos@gmail.com>
+Date:   Sat May 9 12:55:02 2015 -0500
+
+    ignore modules node
+
+commit b1cb35259cdc4bebc39a2407a1f1f14563f16d40
+Author: juan2ramos <juan2ramos@gmail.com>
+Date:   Sat May 9 12:45:38 2015 -0500
+
+    Readme
+
+commit c09dc8fdffe18629c41904cce4b2cc1b0ea6a457
+Merge: 5c72516 93a7322
+Author: juan2ramos <juan2ramos@gmail.com>
+Date:   Sat May 9 12:44:09 2015 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 5c72516f81e952b35a653725c1eb79561da06203
+Author: juan2ramos <juan2ramos@gmail.com>
+Date:   Sat May 9 12:43:59 2015 -0500
+
+    Readme
+
+commit 93a7322eba337af4b2fee3ba75d113577ec9908e
+Author: chiricos <edwarddiaz92@gmail.com>
+Date:   Sat May 9 12:42:56 2015 -0500
+
+    rm idea
+
+commit 3e0bc66bd2a9743d407cf2e43800dec0b042d05d
+Author: chiricos <edwarddiaz92@gmail.com>
+Date:   Sat May 9 12:39:50 2015 -0500
+
+    ignorando idea
+
+commit 25e24894ab3840fc0d120451469c5362b42ff054
+Author: juan2ramos <juan2ramos@gmail.com>
+Date:   Sat May 9 12:34:11 2015 -0500
+
+    update init
+
+commit 518954908fbd792f39cf943b0fd6dfc8cbdb41cd
+Author: chiricos <edwarddiaz92@gmail.com>
+Date:   Sat May 9 12:32:45 2015 -0500
+
+    cambio de nombre
+
+commit c5084484befc05ff60677353fb55d459a8cc54a6
+Author: chiricos <edwarddiaz92@gmail.com>
+Date:   Sat May 9 12:27:50 2015 -0500
+
+    readme
+
+commit 1ae1948795f3d4d8a4636e7ec61eeccf59902269
+Author: chiricos <edwarddiaz92@gmail.com>
+Date:   Sat May 9 12:26:14 2015 -0500
+
+    first
