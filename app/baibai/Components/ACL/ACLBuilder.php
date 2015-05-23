@@ -1,6 +1,7 @@
 <?php namespace baibai\baibai\Components\ACL;
 
 use baibai\User;
+use baibai\baibai\Entities\Role;
 
 class ACLBuilder
 {
@@ -11,7 +12,6 @@ class ACLBuilder
 
 
     public function getPermissionsAll($idUser = false){
-
         $this->idUser = ($idUser) ? $idUser : (\Auth::check() ? \Auth::user()->id : false);
         $this->idRole = User::find($this->idUser)->role_id;
         $permissionsRole = $this->permissionsRole();
@@ -57,10 +57,11 @@ class ACLBuilder
     private function permissionsRole()
     {
         $data = array();
-        $permissions = Role::join('permission_roles', 'role.id', '=', 'permission_roles.role_id')
+        $permissions = Role::join('permission_roles', 'roles.id', '=', 'permission_roles.role_id')
             ->join('permissions', 'permission_roles.permission_id', '=', 'permissions.id')
-            ->whereRaw('role.id = ? AND permission_roles.available = ?', [$this->idRole, 1])
+            ->whereRaw('roles.id = ? AND permission_roles.available = ?', [$this->idRole, 1])
             ->get();
+
 
         foreach($permissions as $permission){
             $key = $permission->name;

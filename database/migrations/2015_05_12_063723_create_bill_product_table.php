@@ -16,6 +16,8 @@ class CreateBillProductTable extends Migration {
         {
             $table->increments('id');
             $table->integer('value_product');
+            $table->text('comment');
+            $table->enum('score',['excelente','bueno','regular','malo','pesimo']);
             $table->integer('product_id')->unsigned();
             $table->foreign('product_id')->references('id')->on('products');
             $table->integer('bill_id')->unsigned();

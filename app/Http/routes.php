@@ -15,11 +15,13 @@ Route::get('/', 'WelcomeController@index');
 
 Route::get('home', 'HomeController@index');
 
-Route::get('drawde',function()
-{
 
-   return 'drawde';
-});
+
+
+Route::get('drawde',array('as'=>'drawde','middleware'=>'permission','permission'=>'prueba','uses',function(){
+    return 'drawde';
+}));
+
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

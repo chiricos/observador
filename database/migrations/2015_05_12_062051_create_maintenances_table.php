@@ -15,15 +15,15 @@ class CreateMaintenancesTable extends Migration {
 		Schema::create('maintenances',function(Blueprint $table)
         {
             $table->increments('id');
-            $table->string('comments');
             $table->integer('backup');
             $table->integer('qualifications');
+            $table->dateTime('date_maintenance');
             $table->integer('device_id')->unsigned();
             $table->foreign('device_id')->references('id')->on('devices');
             $table->integer('technician_id')->unsigned();
             $table->foreign('technician_id')->references('id')->on('technicians');
             $table->integer('type_id')->unsigned();
-            $table->foreign('type_id')->references('id')->on('types');
+            $table->foreign('type_id')->references('id')->on('type_maintenances');
             $table->timestamps();
         });
 	}

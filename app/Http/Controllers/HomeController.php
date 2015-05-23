@@ -1,6 +1,7 @@
 <?php namespace baibai\Http\Controllers;
 
 use baibai\baibai\Components\ACL\ACL;
+use baibai\baibai\Entities\Role;
 
 class HomeController extends Controller {
 
