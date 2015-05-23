@@ -24,9 +24,7 @@ Route::controllers([
 ]);
 $router->get('fo', [
 	'uses' => 'HomeController@foo',
-	'as' => NULL,
-	'middleware' => ['permission'],
-	'where' => [],
-	'domain' => NULL,
+	'as' => 'fo',
+	'middleware' => ['auth','permission'],
 	'permission' => 'prueba'
 ]);

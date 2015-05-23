@@ -17,7 +17,6 @@ class Permission {
 	{
 		$action = $request->route()->getAction();
 		$permission = $action['permission'];
-	    ACL::getPermissionsAll(1);
 		if (!ACL::check($permission))
 		{
 			return redirect('usuario/20');
