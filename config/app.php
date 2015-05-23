@@ -144,6 +144,7 @@ return [
 		'baibai\Providers\ConfigServiceProvider',
 		'baibai\Providers\EventServiceProvider',
 		'baibai\Providers\RouteServiceProvider',
+        'baibai\baibai\Components\ACL\ACLServiceProvider',
 
 	],
 
@@ -192,6 +193,7 @@ return [
 		'URL'       => 'Illuminate\Support\Facades\URL',
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
+        'ACL'       => 'baibai\baibai\Components\ACL\ACL'
 
 	],
 

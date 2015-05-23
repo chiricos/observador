@@ -1,5 +1,7 @@
 <?php namespace baibai\Http\Controllers;
 
+use baibai\baibai\Components\ACL\ACL;
+
 class HomeController extends Controller {
 
 	/*
