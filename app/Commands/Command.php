@@ -1,4 +1,4 @@
-<?php namespace App\Commands;
+<?php namespace baibai\Commands;
 
 abstract class Command {
 

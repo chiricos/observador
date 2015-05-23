@@ -1,6 +1,6 @@
-<?php namespace App\Services;
+<?php namespace baibai\Services;
 
-use App\User;
+use baibai\User;
 use Validator;
 use Illuminate\Contracts\Auth\Registrar as RegistrarContract;
 

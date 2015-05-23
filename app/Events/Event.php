@@ -1,4 +1,4 @@
-<?php namespace App\Events;
+<?php namespace baibai\Events;
 
 abstract class Event {
 
