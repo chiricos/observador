@@ -2,7 +2,7 @@
 
 
 use Closure;
-use baibai\baibai\Components\ACL\ACLBuilder;
+use baibai\baibai\Components\ACL\ACL;
 
 class Permission {
 
@@ -17,8 +17,8 @@ class Permission {
 	{
 		$action = $request->route()->getAction();
 		$permission = $action['permission'];
-	     ACLBuilder::getPermissionAll(1);
-		if (!ACLBuilder::check('prueba'))
+	    ACL::getPermissionsAll(1);
+		if (!ACL::check($permission))
 		{
 			return redirect('usuario/20');
 		}

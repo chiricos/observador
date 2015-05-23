@@ -36,6 +36,7 @@ class ACLBuilder
         $this->permissionName = $permissionName;
         $this->idUser = ($idUser) ? $idUser : (\Auth::check() ? \Auth::user()->id : false);
         $this->idRole = User::find($this->idUser)->role_id;
+
         return $this->compileACL();
 
     }
