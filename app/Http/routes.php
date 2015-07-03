@@ -28,3 +28,6 @@ $router->get('fo', [
 	'middleware' => ['auth','permission'],
 	'permission' => 'prueba'
 ]);
+
+
+Route::get('usuarios', ['as' => 'users', 'uses' => 'UserController@showUsers']);

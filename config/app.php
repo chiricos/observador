@@ -146,6 +146,8 @@ return [
 		'baibai\Providers\RouteServiceProvider',
         'baibai\baibai\Components\ACL\ACLServiceProvider',
 
+        'Collective\Html\HtmlServiceProvider',
+
 	],
 
 	/*
@@ -193,7 +195,12 @@ return [
 		'URL'       => 'Illuminate\Support\Facades\URL',
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
-        'ACL'       => 'baibai\baibai\Components\ACL\ACL'
+        'ACL'       => 'baibai\baibai\Components\ACL\ACL',
+        /**
+         * form de laravel
+         */
+        'Form' => 'Collective\Html\FormFacade',
+        'Html' => 'Collective\Html\HtmlFacade',
 
 	],
 
