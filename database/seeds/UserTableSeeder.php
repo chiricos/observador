@@ -13,6 +13,7 @@ class UserTableSeeder extends Seeder{
         $faker=Faker::create();
         \DB::table('users')->insert(array(
             'identification'        => '123',
+        'user_name'                 => 'drawde',
             'name'                  => 'edward',
             'second_name'           => 'hair',
             'last_name'             => 'diaz',
@@ -29,6 +30,7 @@ class UserTableSeeder extends Seeder{
         {
             \DB::table('users')->insert(array(
                 'identification'        => $faker->unique()->numberBetween($min = 1000, $max = 9000000),
+                'user_name'             => $faker->userName,
                 'name'                  => $faker->firstName,
                 'second_name'           => $faker->name,
                 'last_name'             => $faker->lastName,

@@ -18,7 +18,7 @@
             <td>{{$user->email}}</td>
             <td>{{$user->mobile_phone}}</td>
             <td>{{$user->phone}}</td>
-            <td>{{$user->role_id}}</td>
+            <td>{{$user->type}}</td>
             <td>
                 <a href="{{route('editUser',$user)}}">Editar</a>
                 <a href="{{route('deleteUser',$user)}}" class="btn-delete">Eliminar</a>

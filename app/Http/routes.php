@@ -32,4 +32,10 @@ $router->get('fo', [
 
 Route::get('usuarios', ['as' => 'users', 'uses' => 'UserController@showUsers']);
 Route::get('editarUsuario', ['as' => 'editUser', 'uses' => 'UserController@showUsers']);
-Route::get('eliminarUsuario', ['as' => 'deleteUser', 'uses' => 'UserController@showUsers']);
+Route::get('eliminarUsuario/{id}', ['as' => 'deleteUser', 'uses' => 'UserController@deleteUser']);
+
+Route::get('crearUsuario', ['as' => 'createUser', 'uses' => 'UserController@createUser']);
+Route::post('crearUsuario', ['as' => 'createUser', 'uses' => 'UserController@saveUser']);
+
+
+Route::get('buscarUsuario', ['as' => 'searchUser', 'uses' => 'UserController@showUsers']);

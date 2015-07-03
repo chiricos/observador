@@ -37,7 +37,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
         return $this->name.' '.$this->second_name.' '.$this->last_name.' '.$this->second_last_name;
     }
 
-    public function isType()
+    public function getTypeAttribute()
     {
         if($this->role_id==1)
         {
@@ -45,6 +45,13 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
         }
         if($this->role_id==2){
             return "Administrador";
+        }
+
+        if($this->role_id==3){
+            return "Tecnico";
+        }
+        if($this->role_id==4){
+            return "Cliente";
         }
     }
 
