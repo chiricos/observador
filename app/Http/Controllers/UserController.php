@@ -1,10 +1,13 @@
 <?php namespace baibai\Http\Controllers;
 
+use baibai\User;
+
 class UserController extends Controller {
 
    public function showUsers()
    {
-       return view('plantille');
+       $users=User::paginate(15);
+       return view('CRUD.Users.showUsers',compact('users'));
    }
 
 }
