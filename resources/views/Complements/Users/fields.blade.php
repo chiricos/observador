@@ -15,7 +15,7 @@
 
 <div class="">
     {!! Form::label('second_name','Segundo Nombre') !!}
-    {!! Form::text('first_name',null,['class'=>'form-control','placeholder'=>'ingrese su segundo nombre']) !!}
+    {!! Form::text('second_name',null,['class'=>'form-control','placeholder'=>'ingrese su segundo nombre']) !!}
 </div>
 
 <div class="">
@@ -38,10 +38,10 @@
     {!! Form::password('password',['class'=>'form-control','placeholder'=>'contraseña']) !!}
 </div>
 
-<div class="">
+<!--<div class="">
     {!! Form::label('confirmation_password','Confirmar Contraseña') !!}
     {!! Form::password('confirmation_password',['class'=>'form-control','placeholder'=>'contraseña']) !!}
-</div>
+</div>-->
 
 <div class="">
     {!! Form::label('mobile_phone','Celular') !!}
@@ -54,16 +54,11 @@
 </div>
 
 <div class="">
-    {!! Form::label('email','Correo') !!}
-    {!! Form::text('email',null,['class'=>'form-control','placeholder'=>'ingrese su correo']) !!}
-</div>
-
-<div class="">
     {!! Form::label('role_id','Tipo de Cuenta') !!}
     {!! Form::select('role_id',$types,null,['class'=>'form-control']) !!}
 </div>
 
-<div class="">
+<!--<div class="">
     {!! Form::label('photo','Foto') !!}
     {!! Form::file('photo') !!}
-</div>
+</div>-->

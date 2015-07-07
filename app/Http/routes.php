@@ -31,7 +31,8 @@ $router->get('fo', [
 
 
 Route::get('usuarios', ['as' => 'users', 'uses' => 'UserController@showUsers']);
-Route::get('editarUsuario', ['as' => 'editUser', 'uses' => 'UserController@showUsers']);
+Route::get('editarUsuario/{id}', ['as' => 'editUser', 'uses' => 'UserController@editUser']);
+Route::post('actualizarUsuario/{id}', ['as' => 'updateUser', 'uses' => 'UserController@updateUser']);
 Route::get('eliminarUsuario/{id}', ['as' => 'deleteUser', 'uses' => 'UserController@deleteUser']);
 
 Route::get('crearUsuario', ['as' => 'createUser', 'uses' => 'UserController@createUser']);
