@@ -20,7 +20,7 @@
     <![endif]-->
 </head>
 <body>
-<h1>baibai</h1>
+<h1>Observador</h1>
 @yield('content')
 @yield('scripts')
 </body>

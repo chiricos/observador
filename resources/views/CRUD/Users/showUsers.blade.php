@@ -1,7 +1,7 @@
 @extends('plantille')
 
 @section('title')
-    baibai usuarios
+    observador
 @stop
 
 @section('content')

@@ -22,11 +22,12 @@ class UserTableSeeder extends Seeder{
             'password'              => \Hash::make('123456'),
             'mobile_phone'          => '4324',
             'phone'                 => '432423',
+            'curso'                 => '11-01',
             'photo'                 => 'perfil.png',
             'role_id'               => '1'
         ));
 
-        for($i=0;$i<100;$i++)
+        for($i=0;$i<10;$i++)
         {
             \DB::table('users')->insert(array(
                 'identification'        => $faker->unique()->numberBetween($min = 1000, $max = 9000000),
@@ -39,6 +40,7 @@ class UserTableSeeder extends Seeder{
                 'password'              => \Hash::make('123456'),
                 'mobile_phone'          => $faker->phoneNumber,
                 'phone'                 => $faker->phoneNumber,
+                'curso'                 => '11-01',
                 'photo'                 => 'perfil.png',
                 'role_id'               => $faker->randomElement(['1','2','3','4'])
             ));

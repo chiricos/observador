@@ -7,7 +7,7 @@
         <td>Correo Electronico</td>
         <td>Celular</td>
         <td>Telefono</td>
-        <td>Tipo de Cuenta</td>
+        <td>Curso</td>
         <td>Acciones</td>
     </tr>
     @foreach($users as $user)
@@ -18,7 +18,7 @@
             <td>{{$user->email}}</td>
             <td>{{$user->mobile_phone}}</td>
             <td>{{$user->phone}}</td>
-            <td>{{$user->type}}</td>
+            <td>{{$user->curso}}</td>
             <td>
                 <a href="{{route('editUser',$user)}}">Editar</a>
                 <a href="{{route('deleteUser',$user)}}" class="btn-delete">Eliminar</a>

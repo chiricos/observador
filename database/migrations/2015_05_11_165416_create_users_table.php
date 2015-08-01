@@ -26,8 +26,9 @@ class CreateUsersTable extends Migration {
             $table->integer('mobile_phone');
             $table->integer('phone');
             $table->string('photo');
-            $table->integer('role_id')->unsigned();
-            $table->foreign('role_id')->references('id')->on('roles');
+            $table->integer('curso');
+            $table->integer('user_id');
+            $table->integer('role_id');
             $table->rememberToken();
             $table->timestamps();
         });
