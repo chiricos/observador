@@ -24,7 +24,7 @@ class UserTableSeeder extends Seeder{
             'phone'                 => '432423',
             'curso'                 => '11-01',
             'photo'                 => 'perfil.png',
-            'role_id'               => '1'
+            'role_id'               => 'coordinador'
         ));
 
         for($i=0;$i<10;$i++)
@@ -42,7 +42,7 @@ class UserTableSeeder extends Seeder{
                 'phone'                 => $faker->phoneNumber,
                 'curso'                 => '11-01',
                 'photo'                 => 'perfil.png',
-                'role_id'               => $faker->randomElement(['1','2','3','4'])
+                'role_id'               => $faker->randomElement(['estudiante','profesor','coordinador'])
             ));
         }
 

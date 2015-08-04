@@ -8,6 +8,7 @@
         <td>Celular</td>
         <td>Telefono</td>
         <td>Curso</td>
+        <td>Tipo de cuenta</td>
         <td>Acciones</td>
     </tr>
     @foreach($users as $user)
@@ -19,6 +20,7 @@
             <td>{{$user->mobile_phone}}</td>
             <td>{{$user->phone}}</td>
             <td>{{$user->curso}}</td>
+            <td>{{$user->role_id}}</td>
             <td>
                 <a href="{{route('editUser',$user)}}">Editar</a>
                 <a href="{{route('deleteUser',$user)}}" class="btn-delete">Eliminar</a>
