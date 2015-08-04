@@ -58,9 +58,9 @@ class UserController extends Controller {
     {
         return $types=[
             ''          =>'seleccione Cuenta',
-            '1'         =>'Super Administrador',
-            '2'         =>'Administrador','3'=>'Tecnico',
-            '4'         =>'Cliente'
+            'estudiante'            =>'estudiante',
+            'profesor'              =>'profesor',
+            'coordinador'           =>'coordinador'
         ];
     }
 

@@ -54,6 +54,11 @@
 </div>
 
 <div class="">
+    {!! Form::label('curso','Curso') !!}
+    {!! Form::text('curso',null,['class'=>'form-control','placeholder'=>'ingrese el curso']) !!}
+</div>
+
+<div class="">
     {!! Form::label('role_id','Tipo de Cuenta') !!}
     {!! Form::select('role_id',$types,null,['class'=>'form-control']) !!}
 </div>
