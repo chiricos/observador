@@ -12,11 +12,11 @@ elixir.config.sourcemaps = false;
  */
 
 elixir(function(mix) {
- mix.sass("app.scss", 'public/css/');
+ mix.sass("app.scss", 'public/bootstrap/');
 });
 elixir(function(mix) {
  mix.styles([
-  "public/css/normalize.css",
-  "public/css/app.css"
- ], 'public/css/style.css', 'public/css');
+  "public/bootstrap/normalize.css",
+  "public/bootstrap/app.css"
+ ], 'public/bootstrap/style.css', 'public/bootstrap');
 });

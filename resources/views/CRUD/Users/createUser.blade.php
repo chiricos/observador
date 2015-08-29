@@ -7,13 +7,20 @@
 @stop
 
 @section('content')
+    <div class="container ">
+        <div class="panel-heading"><p>Crear Usuario </p></div>
+        <div class="container-fluid">
+
+            @include('Complements.Users.errors')
+            @include('Complements.Users.message')
+            {!! Form::open(['route'=>'createUser','method'=>'POST']) !!}
+            @include('Complements.Users.fields')
+            {!! Form::submit('Crear Usuario',['class'=>'btn-primary-login']) !!}
+            {!! Form::close() !!}
+        </div>
+
+    </div>
 
 
-    @include('Complements.Users.errors')
-    @include('Complements.Users.message')
-    {!! Form::open(['route'=>'createUser','method'=>'POST']) !!}
-    @include('Complements.Users.fields')
-    {!! Form::submit('Crear Usuario') !!}
-    {!! Form::close() !!}
 
 @stop

@@ -13,8 +13,8 @@
 
 
 Route::get('/', 'HomeController@index');
-Route::get('juan',function(){
-	dd('sss');
+Route::get('drawde',function(){
+	return view('login');
 });
 
 Route::controllers([
@@ -29,6 +29,9 @@ $router->get('fo', [
 ]);
 
 
+Route::get('home',function(){
+    return view('welcome');
+});
 Route::get('usuarios', ['as' => 'users', 'uses' => 'UserController@showUsers']);
 Route::get('editarUsuario/{id}', ['as' => 'editUser', 'uses' => 'UserController@editUser']);
 Route::post('actualizarUsuario/{id}', ['as' => 'updateUser', 'uses' => 'UserController@updateUser']);

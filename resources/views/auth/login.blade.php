@@ -1,61 +1,64 @@
-@extends('app')
+@extends('plantille')
+
+@section('title')
+
+    Iniciar Session
+
+@stop
 
 @section('content')
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2">
-			<div class="panel panel-default">
-				<div class="panel-heading">Login</div>
-				<div class="panel-body">
-					@if (count($errors) > 0)
-						<div class="alert alert-danger">
-							<strong>Whoops!</strong> There were some problems with your input.<br><br>
-							<ul>
-								@foreach ($errors->all() as $error)
-									<li>{{ $error }}</li>
-								@endforeach
-							</ul>
-						</div>
-					@endif
 
-					<form class="form-horizontal" role="form" method="POST" action="{{ url('/auth/login') }}">
-						<input type="hidden" name="_token" value="{{ csrf_token() }}">
 
-						<div class="form-group">
-							<label class="col-md-4 control-label">E-Mail Address</label>
-							<div class="col-md-6">
-								<input type="email" class="form-control" name="email" value="{{ old('email') }}">
-							</div>
-						</div>
 
-						<div class="form-group">
-							<label class="col-md-4 control-label">Password</label>
-							<div class="col-md-6">
-								<input type="password" class="form-control" name="password">
-							</div>
-						</div>
+    <div class="login">
+    <div class="panel-heading"><p>Login</p></div>
 
-						<div class="form-group">
-							<div class="col-md-6 col-md-offset-4">
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" name="remember"> Remember Me
-									</label>
-								</div>
-							</div>
-						</div>
+            @if (count($errors) > 0)
+            <div class="alert-login">
+                @foreach ($errors->all() as $error)
+                   Los datos estan mal
+                @endforeach
+            </div>
+            @endif
 
-						<div class="form-group">
-							<div class="col-md-6 col-md-offset-4">
-								<button type="submit" class="btn btn-primary">Login</button>
 
-								<a class="btn btn-link" href="{{ url('/password/email') }}">Forgot Your Password?</a>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-@endsection
+
+        <form class="form-login" role="form" method="POST" action="{{ url('/auth/login') }}">
+            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
+            <div class="form-group-login">
+                <label class=" control-label-login">Correo</label>
+                <div class="col-md-6-login">
+                    <input type="email" class="form-control-login" name="email" value="{{ old('email') }}">
+                </div>
+            </div>
+
+            <div class="form-group-login">
+                <label class=" control-label-login">Contraseña</label>
+                <div class="col-md-6-login">
+                    <input type="password" class="form-control-login" name="password">
+                </div>
+            </div>
+
+            <div class="form-group-login">
+                <div class=" col-md-offset-4-login">
+                    <div class="checkbox">
+                        <label class=" control-label-login">
+                            <input type="checkbox" name="remember"> Recordar
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group-login">
+                <div class="col-md-offset-4-login">
+                    <button type="submit" class=" btn-primary-login">Iniciar Session</button>
+
+                    <a class="control-label-login btn-link-login" href="{{ url('/password/email') }}">Olvidaste tú contraseña?</a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+@stop

@@ -1,48 +1,36 @@
-<html>
-	<head>
-		<title>Laravel</title>
-		
-		<link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+@extends('plantille')
 
-		<style>
-			body {
-				margin: 0;
-				padding: 0;
-				width: 100%;
-				height: 100%;
-				color: #B0BEC5;
-				display: table;
-				font-weight: 100;
-				font-family: 'Lato';
-			}
+@section('title')
 
-			.container {
-				text-align: center;
-				display: table-cell;
-				vertical-align: middle;
-			}
+    Iniciar Session
 
-			.content {
-				text-align: center;
-				display: inline-block;
-			}
+@stop
 
-			.title {
-				font-size: 96px;
-				margin-bottom: 40px;
-			}
+@section('content')
 
-			.quote {
-				font-size: 24px;
-			}
-		</style>
-	</head>
-	<body>
-		<div class="container">
-			<div class="content">
-				<div class="title">baibai</div>
-				<div class="quote">{{ Inspiring::quote() }}</div>
-			</div>
-		</div>
-	</body>
-</html>
+    <div class="container">
+        <div class="panel-heading"><p>Datos Personales</p></div>
+        <div class="container-fluid">
+            <div class="two-container">
+                @if(Auth::user()->photo=="")
+                    <img src="images/perfil.png" alt="foto de perfil" class="img-thumbnail">
+                @else
+                    <img src="images/{{Auth::user()->photo}}" alt="foto de perfil" class="img-thumbnail">
+                @endif
+                <a class="btn btn-default" href="{{route('editUser',Auth::user()->id)}}" role="button">Editar</a>
+            </div>
+            <div class="two-container two-text">
+                <p class="lead">Nombre: {{Auth::user()->fullName}}</p>
+                <p class="lead">Correo: {{Auth::user()->email}}</p>
+                <p class="lead">Celular: {{Auth::user()->mobile_phone}}</p>
+                <p class="lead">Teléfono: {{Auth::user()->phone}}</p>
+                @if(Auth::user()->role_id=="estudiante")
+                    <p class="lead">Curso: {{Auth::user()->curso}}</p>
+                @endif
+                <p class="lead">Tipo de cuenta: {{Auth::user()->role_id}}</p>
+            </div>
+        </div>
+
+    </div>
+
+@stop

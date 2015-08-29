@@ -1,1 +1,222 @@
-/*! normalize.css v3.0.1 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:0 0}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*{box-sizing:border-box}a{color:#DC5E5B;text-decoration:none}a:hover{color:#415169;text-decoration:underline}body{font-family:Roboto,sans-serif;font-size:16px;font-weight:100}img{width:100%}li{list-style:none}strong{font-weight:300}ul{margin:0;padding:0}body{color:#000}
+body,html,header,nav{
+    margin: 0;
+    padding: 0;
+}
+
+/*=========================================
+HEADER
+=========================================*/
+
+header{
+    background: linear-gradient(to bottom,#3c3c3c 0,#222 100%);
+    height: 51px;
+    width: 100%;
+}
+
+nav{
+    margin: auto;
+    width: 1170px;
+}
+
+nav ul{
+    height: 100%;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    height: 51px;
+    list-style: none;
+    vertical-align: top;
+}
+
+nav ul li:hover{
+    background: #000000;
+    color: white;
+}
+
+nav ul li a{
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 14px 30px;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+
+@media (max-width: 992px) {
+    nav {
+        width: 970px;
+    }
+}
+
+@media (max-width: 768px){
+    nav {
+        width: 100%;
+    }
+
+    nav ul li a{
+        padding:14px 10px;
+    }
+
+    .table{
+        overflow: scroll;
+    }
+
+    .login{
+        width: 90%!important;
+    }
+}
+
+/*=========================================
+LOGIN
+=========================================*/
+
+.login{
+    border:1px solid #DDDDDD;
+    border-radius: 4px;
+    margin:20px auto;
+    padding: 0;
+    width: 50%;
+}
+
+.panel-heading{
+    border-bottom:1px solid #DDDDDD;
+    background: #F5F5F5;
+    text-align: center;
+    margin: 0;
+    padding: 2px;
+
+}
+
+.form-login{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin:25px auto;
+    width: 90%;
+}
+
+.form-group-login{
+    width: 100%;
+}
+
+.control-label-login{
+    padding: 15px 0;
+    display: block;
+}
+
+
+.form-control-login{
+    display: block;
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.btn-primary-login{
+    color: white;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 4px;
+    background-color: #337AB7;
+}
+
+.alert-login{
+    background: linear-gradient(to bottom,#f2dede 0,#e7c3c3 100%);
+    width: 90%;
+    margin: 10px auto;
+    line-height: 1;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid rgba(255, 0, 0, 0.44);
+    border-radius: 4px;
+    color: red;
+
+}
+
+/*=========================================
+HOME
+=========================================*/
+
+.container{
+    border:1px solid #DDDDDD;
+    border-radius: 4px;
+    margin:20px auto;
+    padding: 0;
+    width: 90%;
+}
+
+.container-fluid{
+    border-radius: 4px;
+    margin:20px auto;
+    padding: 0;
+    width: 90%;
+}
+
+.container .panel-heading p{
+    line-height: 1;
+    margin: 10px;
+}
+
+.two-container{
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+}
+
+.two-text{
+    padding: 20px;
+}
+
+.form-control{
+    margin: 10px;
+}
+
+.right-text{
+    text-align: end;
+}
+
+.search{
+    display: inline-block;
+    width: 20%;
+}
+
+.table-striped{
+    margin: 10px auto;
+}
+
+.img-circle{
+    width: 50px;
+}

@@ -33,7 +33,7 @@ class HomeController extends Controller {
 	 */
 	public function index()
 	{
-        return redirect("usuarios");
+        return redirect("home");
 	}
 
     public function foo()
