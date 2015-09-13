@@ -40,5 +40,10 @@ Route::get('eliminarUsuario/{id}', ['as' => 'deleteUser', 'uses' => 'UserControl
 Route::get('crearUsuario', ['as' => 'createUser', 'uses' => 'UserController@createUser']);
 Route::post('crearUsuario', ['as' => 'createUser', 'uses' => 'UserController@saveUser']);
 
+Route::get('verObservaciones', ['as' => 'seeObservations', 'uses' => 'ObservationController@show']);
+Route::get('observaciones/{id}', ['as' => 'observations', 'uses' => 'ObservationController@observations']);
+Route::post('crearObservaciones', ['as' => 'createObservations', 'uses' => 'ObservationController@createObservation']);
+
+
 
 Route::get('buscarUsuario', ['as' => 'searchUser', 'uses' => 'UserController@showUsers']);

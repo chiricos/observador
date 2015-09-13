@@ -26,7 +26,7 @@ class UserTableSeeder extends Seeder{
             'photo'                 => 'perfil.png',
             'role_id'               => 'coordinador'
         ));
-
+        /*
         for($i=0;$i<10;$i++)
         {
             \DB::table('users')->insert(array(
@@ -44,7 +44,7 @@ class UserTableSeeder extends Seeder{
                 'photo'                 => 'perfil.png',
                 'role_id'               => $faker->randomElement(['estudiante','profesor','coordinador'])
             ));
-        }
+        }*/
 
     }
 }

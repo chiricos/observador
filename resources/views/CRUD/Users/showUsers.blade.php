@@ -9,7 +9,6 @@
     <div class="container ">
         <div class="panel-heading"><p>Crear Usuario </p></div>
         <div class="container-fluid right-text">
-            @include('Complements.Users.search')
         </div>
 
         <div class="container-fluid">

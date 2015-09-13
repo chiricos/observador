@@ -9,7 +9,6 @@ use baibai\Http\Requests\CreateUserRequest;
 class UserController extends Controller {
 
 
-
     public function showUsers()
     {
         $users=User::paginate(15);

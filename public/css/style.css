@@ -3,6 +3,10 @@ body,html,header,nav{
     padding: 0;
 }
 
+.hidden, #hidden{
+    display: none;
+}
+
 /*=========================================
 HEADER
 =========================================*/
@@ -219,4 +223,17 @@ HOME
 
 .img-circle{
     width: 50px;
+}
+
+.img-thumbnail{
+    width: 50%;
+}
+
+textarea{
+    width: 100%;
+}
+
+input{
+    padding: 30px;
+    text-align: center;
 }
