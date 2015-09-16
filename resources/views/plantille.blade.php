@@ -19,7 +19,11 @@
     <![endif]-->
 </head>
 <body>
+
 @include('Complements.menu')
+<figure class="logo">
+    <img src="images/logo.png">
+</figure>
 @yield('content')
 @yield('scripts')
 </body>

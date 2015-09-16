@@ -16,7 +16,6 @@
             <a class="btn btn-default" href="{{route('createUser')}}">Crear un nuevo usuario</a>
 
             @include('Complements.Users.table')
-            {!!$users->appends(Request::only(['name','type']))->render()!!}
         </div>
     </div>
 
