@@ -71,6 +71,18 @@
 
 
             @if(count($observations)>0)
+            <div class="container">
+                <div class="panel-heading"><p>Obervaciones</p></div>
+                <div class="container-fluid">
+                    @foreach($observations as $obsevation)
+                        <p>
+                            observacion:{{$obsevation->observacion}}
+                            fecha:{{$obsevation->created_at}}
+                        </p>
+                    @endforeach
+                </div>
+                </div>
+            </div>
             @else
                 <p>El estudiante no tiene observaciones</p>
             @endif
