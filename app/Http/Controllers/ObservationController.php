@@ -1,5 +1,6 @@
 <?php namespace baibai\Http\Controllers;
 
+use baibai\Http\Requests\EditUserRequest;
 use baibai\baibai\Entities\Observador;
 use baibai\User;
 use Illuminate\Http\Request;
@@ -21,10 +22,9 @@ class ObservationController extends Controller {
 
     }
 
-    public function createObservation(CreateUserRequest $request)
+    public function createObservation($id)
     {
-        dd("entro");exit;
-        Observador::create($request->all());
+        Observador::create(Input::all());
         return Redirect::back();
     }
 

@@ -41,7 +41,7 @@
                 <div class="container">
                     <div class="panel-heading"><p>Agregar una nueva observacion</p></div>
                     <div class="container-fluid">
-                        {!! Form::open(['route'=>'createObservations','method'=>'POST']) !!}
+                        {!! Form::open(['route'=>['observations',$user->id],'method'=>'POST']) !!}
 
                         <div class="form-group-login">
                             <div class="col-md-6-login">
@@ -58,7 +58,8 @@
                         <div class="form-group-login">
                             <div class="col-md-6-login">
                                 se compromete a cumplir?
-                                {!! Form::checkbox('compromete',null,['required']) !!}
+                                {!! Form::checkbox('compromete', 'value', false,['required']) !!}
+                            
 
                             </div>
                         </div>

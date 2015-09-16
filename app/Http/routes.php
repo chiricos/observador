@@ -42,7 +42,7 @@ Route::post('crearUsuario', ['as' => 'createUser', 'uses' => 'UserController@sav
 
 Route::get('verObservaciones', ['as' => 'seeObservations', 'uses' => 'ObservationController@show']);
 Route::get('observaciones/{id}', ['as' => 'observations', 'uses' => 'ObservationController@observations']);
-Route::post('crearObservaciones', ['as' => 'createObservations', 'uses' => 'ObservationController@createObservation']);
+Route::post('observaciones/{id}', ['as' => 'observations', 'uses' => 'ObservationController@createObservation']);
 
 
 

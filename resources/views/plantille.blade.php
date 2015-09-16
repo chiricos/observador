@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title')</title>
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap-theme.min.css">
-
+ 
+   
+    {!! Html::style('css/bootstrap/bootstrap.min.css') !!}
+    {!! Html::style('css/bootstrap/bootstrap-theme.min.css') !!}
     {!! Html::style('css/style.css') !!}
 
     <!-- Fonts -->
@@ -22,7 +23,7 @@
 
 @include('Complements.menu')
 <figure class="logo">
-    <img src="images/logo.png">
+{!! HTML::image('images/logo.png','',array('id'=>'logo')) !!}
 </figure>
 @yield('content')
 @yield('scripts')
