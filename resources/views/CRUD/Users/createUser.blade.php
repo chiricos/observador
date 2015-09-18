@@ -13,7 +13,7 @@
 
             @include('Complements.Users.errors')
             @include('Complements.Users.message')
-            {!! Form::open(['route'=>'createUser','method'=>'POST']) !!}
+            {!! Form::open(['route'=>'createUser','method'=>'POST','files'=>true,'enctype'=>'multipar/form-data']) !!}
             @include('Complements.Users.fields')
             {!! Form::submit('Crear Usuario',['class'=>'btn-primary-login']) !!}
             {!! Form::close() !!}

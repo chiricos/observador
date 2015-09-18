@@ -13,7 +13,7 @@
         <div class="container-fluid">
             @include('Complements.Users.errors')
             @include('Complements.Users.message')
-            {!! Form::model($user,['route'=>['updateUser',$user],'method'=>'POST']) !!}
+            {!! Form::model($user,['route'=>['updateUser',$user],'method'=>'POST','files'=>true,'enctype'=>'multipar/form-data']) !!}
             @include('Complements.Users.fields')
             {!! Form::submit('Actualizar Usuario',['class'=>'btn-primary-login']) !!}
             {!! Form::close() !!}

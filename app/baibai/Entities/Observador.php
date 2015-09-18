@@ -13,6 +13,7 @@ class Observador extends Model
     protected $table='observador';
 
     protected $fillabel=['user_id','observacion','compromete'];
+    protected $guarded = array();
 
 
 }

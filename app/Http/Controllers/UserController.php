@@ -23,7 +23,28 @@ class UserController extends Controller {
 
     public function saveUser(CreateUserRequest $request)
     {
-        $user=User::create($request->all());
+        $photo='perfil.png';
+        if($request->file('photo')){
+            $file = $request->file('photo');
+            $fileName = $file->getClientOriginalName();
+            \Storage::disk('local')->put($fileName,  \File::get($file));
+            $photo=$fileName;
+        }
+        $user=new User();
+        $user->identification=$request->identification;
+        $user->user_name=$request->user_name;
+        $user->name=$request->name;
+        $user->second_name=$request->second_name;
+        $user->last_name=$request->last_name;
+        $user->second_last_name=$request->second_last_name;
+        $user->email=$request->email;
+        $user->password=$request->password;
+        $user->mobile_phone=$request->mobile_phone;
+        $user->phone=$request->phone;
+        $user->photo=$photo;
+        $user->curso=$request->curso;
+        $user->role_id=$request->role_id;
+        $user->save();
         return Redirect::back();
     }
 
@@ -37,7 +58,16 @@ class UserController extends Controller {
     public function updateUser(EditUserRequest $request,$id)
     {
         $user=User::find($id);
+        $photo='';
+        if($request->file('photo'))
+        {
+            $file = $request->file('photo');
+            $fileName = $file->getClientOriginalName();
+            \Storage::disk('local')->put($fileName,  \File::get($file));
+            $photo=$fileName;
+        }
         $user->fill($request->all());
+        $user->photo=$photo;
         $user->save();
         return Redirect::back();
     }

@@ -71,22 +71,29 @@
                 </div>
 
 
-            @if(count($observations)>0)
+        <div class="container-fluid">
             <div class="container">
-                <div class="panel-heading"><p>Obervaciones</p></div>
+                <div class="panel-heading"><p>observaciones</p></div>
                 <div class="container-fluid">
+            @if(count($observations)>0)
+
                     @foreach($observations as $obsevation)
-                        <p>
-                            observacion:{{$obsevation->observacion}}
-                            fecha:{{$obsevation->created_at}}
+                        <div class="observaciones">
+                            <h2>observacion:</h2>
+                            <p>{{$obsevation->observacion}}</p>
+                            <span>fecha:{{$obsevation->created_at}}</span>
+                        </div>
+
+
                         </p>
                     @endforeach
-                </div>
-                </div>
-            </div>
+
             @else
                 <p>El estudiante no tiene observaciones</p>
             @endif
+                </div>
+            </div>
+        </div>
         </div>
     </div>
 
